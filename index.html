@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keep Talking and Nobody Explodes: Password</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"  src="letters.js"></script>
+</head>
+<body>
+<div id="scoring" style="display: none;">
+<td align="left" id = "printscore"> Score: 0 </td>
+<td align="right" id = "lives"> Lives: 3 </td>
+</div>
+
+<div id="settingspage">
+ <td><font size="4"> Current Anwsers: </p> </font>
+<table style="width:100%">
+	<tr>
+	<td id="wordabout">about </td>
+	<td id="wordafter">after </td>
+	<td id="wordagain">again </td>
+	<td id="wordbelow">below </td>
+	<td id="wordcould">could </td>
+	</tr>
+	
+	<tr>
+	<td id="wordevery">every </td>
+	<td id="wordfirst">first </td>
+	<td id="wordfound">found </td>
+	<td id="wordgreat">great </td>
+	<td id="wordhouse">house </td>
+	</tr>
+	
+	<tr>
+	<td id="wordlarge">large </td>
+	<td id="wordlearn">learn </td>
+	<td id="wordnever">never </td>
+	<td id="wordother">other </td>
+	<td id="wordplace">place </td>
+	</tr>
+	
+	
+	<tr>
+	<td id="wordplanet">planet </td>
+	<td id="wordpoint">point </td>
+	<td id="wordright">right </td>
+	<td id="wordsmall">small </td>
+	<td id="wordsound">sound </td>
+	</div>
+	
+	<tr>
+	<td id="wordspell">spell </td>
+	<td id="wordstill">still </td>
+	<td id="wordstudy">study </td>
+	<td id="wordtheir">their </td>
+	<td id="wordthere">there </td>
+	</tr>
+	
+	<tr>
+	<td id="wordthese">these </td>
+	<td id="wordthing">thing </td>
+	<td id="wordthink">think </td>
+	<td id="wordthree">three </td>
+	<td id="wordwater">water </td>
+	</tr>
+	
+	<tr>
+	<td id="wordwhere">where </td>
+	<td id="wordwhich">which </td>
+	<td id="wordworld">world </td>
+	<td id="wordwould">would </td>
+	<td id="wordwrite">write </td>
+	</tr>
+	</table>
+</div>
+
+<div>
+<select id="selecter" name="selecter">
+	<option> Letter 1 </option>
+	<option> Letter 2 </option>
+	<option> Letter 3 </option>
+	<option> Letter 4 </option>
+	<option> Letter 5 </option>
+	</select>
+</div>	
+
+
+<form id="letters" action="form_action.asp">
+ Letters: <input type="text" name="letters" value=""><br>
+</form> 
+
+<button id="letterremove" onclick="LetterRemoval()"> Remove Selection </button>
+<button onclick="RestartWords()"> Restart </button>
+
+
+</body>
+</html>
